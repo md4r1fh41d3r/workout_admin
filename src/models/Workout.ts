@@ -7,11 +7,12 @@ export interface Workout {
   id: string;
   name: string;
   description: string;
-  thumbnailUrl?: string;
-  likes?: number;
-  creator?: Creator;
-  type?: string;
-  muscleGroup?: string[];
-  equipment?: string[];
-  isShared?: boolean;
+  type: string;
+  muscleGroup: string[];
+  equipment: string[];
+  thumbnailUrl: string;
+  likes: number;
+  isShared: boolean;
+  createdAt: string;
+  createdBy?: string;
 } 
